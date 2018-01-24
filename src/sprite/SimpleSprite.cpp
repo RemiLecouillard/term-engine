@@ -1,4 +1,4 @@
-#include "SimpleSprite.hpp"
+#include "../../include/SimpleSprite.hpp"
 
 SimpleSprite::SimpleSprite()
 {
