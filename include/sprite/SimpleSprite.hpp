@@ -1,7 +1,7 @@
 #ifndef SIMPLESPRITE_HPP
 #define SIMPLESPRITE_HPP
 
-#include "../../include/Sprite.hpp"
+#include "../../include/sprite/Sprite.hpp"
 
 class SimpleSprite : Sprite {
 public:

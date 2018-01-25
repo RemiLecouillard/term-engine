@@ -1,6 +1,5 @@
-#include "../../include/SimpleSprite.hpp"
+#include "../../include/sprite/SimpleSprite.hpp"
 
-SimpleSprite::SimpleSprite()
-{
+SimpleSprite::SimpleSprite() {
 
 }

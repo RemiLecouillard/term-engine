@@ -16,7 +16,7 @@ class Sprite {
 public:
     Sprite(int width, int height);
     Sprite(const char * filename);//create sprite from a save sprite
-    write(const char * filename);
+    void write(const char * filename);
 };
 
 

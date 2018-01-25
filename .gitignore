@@ -60,7 +60,6 @@
 
 # CMake
 cmake-build-debug/
-CmakeLists.txt
 
 # Mongo Explorer plugin:
 .idea/**/mongoSettings.xml
