@@ -7,4 +7,6 @@ add_executable(term_engine
         include/sprite/SimpleSprite.hpp
         include/sprite/Sprite.hpp
         src/sprite/SimpleSprite.cpp
-        src/sprite/Sprite.cpp)
+        src/sprite/Sprite.cpp
+        src/sprite/test/testSprite.cpp
+        )
