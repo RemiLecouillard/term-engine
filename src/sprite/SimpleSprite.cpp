@@ -1,12 +1,14 @@
+#include <utility>
+#include <iostream>
 #include "../../include/sprite/SimpleSprite.hpp"
 
-SimpleSprite::SimpleSprite(int width, int height) : Sprite(width, height) {
+SimpleSprite::SimpleSprite(int width, int height, std::string name) : Sprite(width, height, std::move(name)) {
 
 }
 
-SimpleSprite::SimpleSprite(int width, int height, std::vector<std::vector<char>> matrix)
-        : Sprite(width, height) {
-    this->matrix = matrix;
+SimpleSprite::SimpleSprite(int width, int height, std::string name, std::vector<std::vector<char>> matrix)
+        : Sprite(width, height, std::move(name)) {
+    this->matrix = std::move(matrix);
 }
 
 void SimpleSprite::display() {
@@ -15,9 +17,9 @@ void SimpleSprite::display() {
 
     for(int i = 0; i < height; i++){
         for (int j = 0; j < width; j++) {
-            printf("%c", this->matrix[i][j]);
+            std::cout << this->matrix[i][j];
         }
-        printf("\n");
+        std::cout << std::endl;
     }
 }
 

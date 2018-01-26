@@ -3,7 +3,6 @@
 //
 
 #include "../../../include/sprite/SimpleSprite.hpp"
-#include <vector>
 
 using namespace std;
 
@@ -12,7 +11,7 @@ int main() {
 
     matrix[0][0] = 'A';
     matrix[1][1] = '@';
-    SimpleSprite s = SimpleSprite(2, 2, matrix);
+    SimpleSprite s = SimpleSprite(2, 2,"test", matrix);
 
     s.display();
 

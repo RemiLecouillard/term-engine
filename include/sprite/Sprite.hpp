@@ -7,11 +7,13 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 
 class Sprite {
 
     int width;
     int height;
+    std::string name;
 
 public:
     /**
@@ -19,7 +21,7 @@ public:
      * @param width
      * @param height
      */
-    Sprite(int width, int height);
+    Sprite(int width, int height, std::string name);
     //Sprite(const char * filename);//create sprite from a save sprite
     /**
      * Display the sprite

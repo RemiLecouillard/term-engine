@@ -9,9 +9,9 @@ class SimpleSprite : public Sprite {
 
 public:
 
-    SimpleSprite(int width, int height);
+    SimpleSprite(int width, int height, std::string name);
 
-    SimpleSprite(int width, int height, std::vector<std::vector<char>> matrix);
+    SimpleSprite(int width, int height, std::string name, std::vector<std::vector<char>> matrix);
 
     char getChar(int i, int j);
 
