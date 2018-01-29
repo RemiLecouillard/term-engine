@@ -35,7 +35,7 @@ public:
     /**
      * Display the sprite
      */
-    virtual void display()=0;
+    virtual void display(float lastCall,std::vector<std::vector<AsciiPixel>> &array,int x,int y)=0;
 
     /**
      * load a sprite from a file
