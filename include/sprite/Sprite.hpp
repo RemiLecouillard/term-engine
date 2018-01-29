@@ -9,6 +9,15 @@
 #include <vector>
 #include <string>
 
+enum Color {Black, Red, Green, Yellow, Blue, Magenta, Cyan, White};
+
+struct AsciiPixel {
+    char asciiChar;
+    Color charColor;
+    Color BackgroundColor;
+};
+
+
 class Sprite {
 
     int width;

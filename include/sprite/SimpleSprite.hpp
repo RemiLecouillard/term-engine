@@ -5,7 +5,7 @@
 
 class SimpleSprite : public Sprite {
 
-    std::vector<std::vector<char>> matrix;
+    std::vector<std::vector<AsciiPixel>> matrix;
 
 public:
 
