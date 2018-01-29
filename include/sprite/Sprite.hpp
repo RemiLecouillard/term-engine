@@ -32,8 +32,13 @@ public:
      */
     Sprite(int width, int height, std::string name);
     //Sprite(const char * filename);//create sprite from a save sprite
+
     /**
-     * Display the sprite
+     * Displays the sprite on the given array
+     * @param lastCall the elapsed time since the sprite has been displayed for the last time.
+     * @param array The array where to display the sprite
+     * @param x the x index where to display the sprite
+     * @param y the y index where to display the sprite
      */
     virtual void display(float lastCall,std::vector<std::vector<AsciiPixel>> &array,int x,int y)=0;
 
