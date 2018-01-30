@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <fstream>
 
 
 enum Color {Black, Red, Green, Yellow, Blue, Magenta, Cyan, White};
@@ -50,16 +51,26 @@ public:
      * load a sprite from a file
      * @param filename
      */
-    virtual void read(const char * filename)=0;
+    virtual void read(const std::string filename)=0;
 
     /**
      * save the sprite to a file
      * @param filename
      */
-    virtual void save(const char * filename)=0;
-    
+    virtual void save(const std::string filename)=0;
+
+    //void saveDim(std::ofstream file);
+
     int getWidth() const;
     int getHeight() const;
+
+    const std::string &getName() const;
+
+
+protected:
+    void setDim(int height, int width);
+
+    void setName(const std::string &name);
 };
 
 

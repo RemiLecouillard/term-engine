@@ -23,12 +23,26 @@ void SimpleSprite::display(float lastCall,Matrix &array,int x,int y) {
     }
 }
 
-void SimpleSprite::save(const char *filename) {
+void SimpleSprite::save(const std::string filename) {
+    std::ofstream file (filename);
+    if (file.is_open()){
+        file << this->getName() << "\n";
+        file << this->getHeight() << " " <<this->getWidth() << "\n";
 
+    }
 }
 
-void SimpleSprite::read(const char *filename) {
+void SimpleSprite::read(const std::string filename) {
+    std::ifstream file(filename);
+    std::string name;
+    int width, height;
+    if (file.is_open()){
+        file >> name;
+        file >> height >> width;
 
+        setName(name);
+        setDim(height, width);
+    }
 }
 
 void SimpleSprite::displayDebug() {

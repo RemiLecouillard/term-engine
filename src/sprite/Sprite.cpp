@@ -21,5 +21,20 @@ int Sprite::getHeight() const {
     return height;
 }
 
+const std::string &Sprite::getName() const {
+    return name;
+}
+
+
+
+void Sprite::setName(const std::string &name) {
+    Sprite::name = name;
+}
+
+void Sprite::setDim(int height, int width) {
+    Sprite::height = height;
+    Sprite::width = width;
+}
+
 
 

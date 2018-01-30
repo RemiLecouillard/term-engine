@@ -17,8 +17,8 @@ public:
 
     void displayDebug() override;
 
-    void read(const char *filename) override;
-    void save(const char *filename) override;
+    void read(const std::string filename) override;
+    void save(const std::string filename) override;
 
 
 };
