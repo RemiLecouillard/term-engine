@@ -11,7 +11,7 @@ SimpleSprite::SimpleSprite(int width, int height, std::string name, std::vector<
     this->matrix = std::move(matrix);
 }
 
-void SimpleSprite::display() {
+void SimpleSprite::display(float lastCall,Matrix &array,int x,int y) {
     int height = this->getHeight();
     int width = this->getWidth();
 
@@ -21,10 +21,6 @@ void SimpleSprite::display() {
         }
         std::cout << std::endl;
     }
-}
-
-char SimpleSprite::getChar(int i, int j) {
-    return this->matrix[i][j];
 }
 
 void SimpleSprite::save(const char *filename) {

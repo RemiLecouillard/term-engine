@@ -5,7 +5,7 @@
 
 class SimpleSprite : public Sprite {
 
-    std::vector<std::vector<AsciiPixel>> matrix;
+    Matrix matrix;
 
 public:
 
@@ -13,9 +13,7 @@ public:
 
     SimpleSprite(int width, int height, std::string name, std::vector<std::vector<char>> matrix);
 
-    char getChar(int i, int j);
-
-    void display() override;
+    void display(float lastCall,Matrix &array,int x,int y) override;
 
     void read(const char *filename) override;
     void save(const char *filename) override;
