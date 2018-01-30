@@ -7,13 +7,13 @@
 using namespace std;
 
 int main() {
-    vector<vector<char> > matrix(2, vector<char>(2));
+    Matrix matrix(2, vector<AsciiPixel>(2));
 
-    matrix[0][0] = 'A';
-    matrix[1][1] = '@';
+    matrix[0][0].asciiChar = 'A';
+    matrix[1][1].asciiChar = '@';
     SimpleSprite s = SimpleSprite(2, 2,"test", matrix);
 
-    s.display();
+    s.displayDebug();
 
     //printf("%d %d\n", s.getHeight(), s.getWidth());
 

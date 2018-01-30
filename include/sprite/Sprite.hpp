@@ -9,16 +9,16 @@
 #include <vector>
 #include <string>
 
-typedef std::vector<std::vector<AsciiPixel>> Matrix;
 
 enum Color {Black, Red, Green, Yellow, Blue, Magenta, Cyan, White};
 
-struct AsciiPixel {
+typedef struct asciiPixel {
     char asciiChar;
     Color charColor;
     Color BackgroundColor;
-};
+} AsciiPixel;
 
+typedef std::vector<std::vector<AsciiPixel>> Matrix;
 
 class Sprite {
 
@@ -43,6 +43,8 @@ public:
      * @param y the y index where to display the sprite
      */
     virtual void display(float lastCall,Matrix &array,int x,int y)=0;
+
+    virtual void displayDebug()=0;
 
     /**
      * load a sprite from a file

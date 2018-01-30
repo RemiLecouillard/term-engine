@@ -11,9 +11,11 @@ public:
 
     SimpleSprite(int width, int height, std::string name);
 
-    SimpleSprite(int width, int height, std::string name, std::vector<std::vector<char>> matrix);
+    SimpleSprite(int width, int height, std::string name, Matrix matrix);
 
     void display(float lastCall,Matrix &array,int x,int y) override;
+
+    void displayDebug() override;
 
     void read(const char *filename) override;
     void save(const char *filename) override;
