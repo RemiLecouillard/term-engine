@@ -34,6 +34,8 @@ public:
      * @param height
      */
     Sprite(int width, int height, std::string name);
+
+    Sprite();
     //Sprite(const char * filename);//create sprite from a save sprite
 
     /**

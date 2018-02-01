@@ -9,4 +9,4 @@ add_executable(term_engine
         src/sprite/SimpleSprite.cpp
         src/sprite/Sprite.cpp
         src/sprite/test/testSprite.cpp
-        )
+        src/sprite/Animation.cpp include/sprite/Animation.hpp src/sprite/oneTimeAnimation.cpp include/sprite/oneTimeAnimation.hpp)

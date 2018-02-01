@@ -36,5 +36,9 @@ void Sprite::setDim(int height, int width) {
     Sprite::width = width;
 }
 
+Sprite::Sprite() {
+
+}
+
 
 
